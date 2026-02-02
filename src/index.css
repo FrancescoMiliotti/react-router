@@ -10,36 +10,16 @@ body {
   color: white;
 }
 
-#navbar {
+.navbar {
   background: #444;
   padding: 1rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin-bottom: 1rem;
 }
 
-#navbar.left {}
 
-#navbar .right {}
-
-#navbar .link {
-  margin: 0 0.5rem;
-}
-
-#navbar .link.active {
-  text-decoration: underline;
-}
-
-.link {
-  color: cyan;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.link:hover {
-  color: violet;
-}
 
 .btn {
   border: solid 1px cyan;
@@ -64,14 +44,3 @@ body {
   background-color: cyan;
 }
 
-.flex-container {
-  display: flex;
-}
-
-.flex-wrap {
-  flex-wrap: wrap;
-}
-
-.gap-1 {
-  gap: 1rem;
-}
