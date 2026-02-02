@@ -37,7 +37,7 @@ function Prodotti() {
                     <div className="card" key={i}>
                         {product.title}
                         <img src={product.image} className="image" />
-                        <p>{product.description}</p>
+                        
                     </div>)}
 
             </div>
