@@ -8,6 +8,7 @@ body {
   font-family: sans-serif;
   background: #222;
   color: white;
+
 }
 
 .navbar {
@@ -38,7 +39,7 @@ body {
   background-color: cyan;
 }
 
-.btn.active{
+.btn.active {
   border: solid 1px cyan;
   color: #222;
   background-color: cyan;
@@ -46,6 +47,7 @@ body {
 
 .flex-container {
   display: flex;
+  justify-content: space-around;
 }
 
 .flex-wrap {
@@ -57,13 +59,18 @@ body {
 }
 
 .card {
-  width: calc((100% - 2rem) / 3);
+  width: calc((100%) / 8);
   padding: 1rem;
   background: #333;
 }
 
 .card .image {
   width: 100%;
+  object-fit:contain;
+  aspect-ratio: 1;
+  object-position: top;
+
+
 }
 
 .card p {
