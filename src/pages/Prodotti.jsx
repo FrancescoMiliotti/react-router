@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import axios from "axios";
-import NavBar from "../components/NavBar"
+
 
 
 function Prodotti() {
@@ -29,7 +29,7 @@ function Prodotti() {
 
     return (
         <div>
-            <NavBar />
+            
 
             <h1>Qui trovate i nostri Prodotti</h1>
             <div className="flex-container flex-wrap gap-1">
