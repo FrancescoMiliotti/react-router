@@ -1,12 +1,13 @@
-import { Link, NavLink } from "react-router-dom"
+
+import NavBar from "../components/NavBar"
 
 
 
 function ChiSiamo() {
     return <div>
-
+        <NavBar />
         <h1>Chi Siamo</h1>
-        <Link className= "btn" to="/">Vai alla HomePage</Link>
+        
     </div>
 }
 
