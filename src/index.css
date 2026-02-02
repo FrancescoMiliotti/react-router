@@ -58,6 +58,12 @@ body {
   background-color: cyan;
 }
 
+.btn.active{
+  border: solid 1px cyan;
+  color: #222;
+  background-color: cyan;
+}
+
 .flex-container {
   display: flex;
 }
