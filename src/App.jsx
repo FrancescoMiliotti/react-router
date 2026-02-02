@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import axios from "axios";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import HomePage from "./pages/HomePage";
 import ChiSiamo from "./pages/ChiSiamo";
