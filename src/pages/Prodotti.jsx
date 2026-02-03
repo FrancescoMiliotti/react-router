@@ -38,7 +38,7 @@ function Prodotti() {
                     <div className="card" key={i}>
                         {product.title}
                         <img src={product.image} className="img" />
-                        <Link className="link" to={`/DettaglioProdotti/${product.id}`}>Dettaglio Prodotti</Link>
+                        <Link className="link" to={`/DettaglioProdotti/${product.id}`}>Dettaglio Prodotto</Link>
 
 
                     </div>)}

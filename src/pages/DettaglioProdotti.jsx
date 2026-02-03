@@ -7,16 +7,16 @@ import { Link, NavLink } from "react-router-dom"
 
 function DettaglioProdotti() {
 
-    const { id } = useParams ();
-    const [dettagli , setDettagli] = useState({});
+    const { id } = useParams();
+    const [dettagli, setDettagli] = useState({});
 
     function getData() {
-        
+
 
         let apiurl = `https://fakestoreapi.com/products/${id}`;
 
         axios.get(apiurl).then(res => {
-           
+
             setDettagli(res.data);
 
         }).catch(error => {
@@ -27,15 +27,22 @@ function DettaglioProdotti() {
 
     }
 
-    useEffect(getData, []); 
+    useEffect(getData, []);
 
 
     return <div>
 
         <h1>Dettaglio Prodotto</h1>
-        <h2>{dettagli.title}</h2>
-        <Link className="link" to="/Prodotti">Torna ai Prodotti</Link>
         
+        <div>
+            <div className="card">
+                <h3>{dettagli.title}</h3>
+                <img src={dettagli.image} className="img" />
+                <p>{dettagli.description}</p>
+            </div>
+            <Link className="btn" to="/Prodotti">Torna ai Prodotti</Link>
+        </div>
+
 
 
     </div>
