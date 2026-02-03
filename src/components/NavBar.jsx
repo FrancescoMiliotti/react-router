@@ -8,7 +8,7 @@ function NavBar() {
             <NavLink className="btn" to="/">HomePage</NavLink>
             <NavLink className="btn" to="/Prodotti">Elenco Prodotti</NavLink>
             <NavLink className="btn" to="/ChiSiamo">Chi Siamo</NavLink>
-            <NavLink className="btn" to="/DettaglioProdotti">Dettaglio Prodotti</NavLink>
+            
         </nav>
 
     </nav>

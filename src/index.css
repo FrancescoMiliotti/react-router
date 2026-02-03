@@ -65,7 +65,7 @@ body {
   background: #333;
 }
 
-.card .image {
+.card .img {
   width: 100%;
   object-fit:contain;
   aspect-ratio: 1;

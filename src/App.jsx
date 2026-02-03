@@ -19,7 +19,7 @@ function App() {
         <Route path="/" Component={HomePage} />
         <Route path="/ChiSiamo" Component={ChiSiamo} />
         <Route path="/Prodotti" Component={Prodotti} />
-        <Route path="/DettaglioProdotti" Component={DettaglioProdotti} />
+        <Route path="/DettaglioProdotti/:id" Component={DettaglioProdotti} />
       </Route>
     </Routes>
 

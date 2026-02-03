@@ -37,8 +37,8 @@ function Prodotti() {
                 {products.map((product, i) =>
                     <div className="card" key={i}>
                         {product.title}
-                        <img src={product.image} className="image" />
-                        <NavLink className="link" to="/DettaglioProdotti">Dettaglio Prodotti</NavLink>
+                        <img src={product.image} className="img" />
+                        <Link className="link" to={`/DettaglioProdotti/${product.id}`}>Dettaglio Prodotti</Link>
 
 
                     </div>)}
