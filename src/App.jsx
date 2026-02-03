@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage";
 import ChiSiamo from "./pages/ChiSiamo";
 import Prodotti from "./pages/Prodotti";
 import DefaultLayout from './layouts/DefaultLayout';
+import DettaglioProdotti from './pages/DettaglioProdotti';
 
 
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/" Component={HomePage} />
         <Route path="/ChiSiamo" Component={ChiSiamo} />
         <Route path="/Prodotti" Component={Prodotti} />
+        <Route path="/DettaglioProdotti" Component={DettaglioProdotti} />
       </Route>
     </Routes>
 

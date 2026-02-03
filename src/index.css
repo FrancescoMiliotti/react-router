@@ -76,3 +76,14 @@ body {
 .card p {
   margin: 0.5rem 0;
 }
+
+
+.link {
+  color: cyan;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.link:hover {
+  color: violet;
+}

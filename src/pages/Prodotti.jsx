@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import axios from "axios";
+import { Link, NavLink } from "react-router-dom"
 
 
 
@@ -29,15 +30,17 @@ function Prodotti() {
 
     return (
         <div>
-            
+
 
             <h1>Qui trovate i nostri Prodotti</h1>
             <div className="flex-container flex-wrap gap-1">
-                {products.map((product,i) =>
+                {products.map((product, i) =>
                     <div className="card" key={i}>
                         {product.title}
                         <img src={product.image} className="image" />
-                        
+                        <NavLink className="link" to="/DettaglioProdotti">Dettaglio Prodotti</NavLink>
+
+
                     </div>)}
 
             </div>
