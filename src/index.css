@@ -15,9 +15,9 @@ body {
   background: #444;
   padding: 1rem;
   display: flex;
-  justify-content: space-around;
+  justify-content:space-between;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 
@@ -28,9 +28,10 @@ body {
   color: cyan;
   background-color: #222;
   cursor: pointer;
-  padding: 0.25rem 0.5rem;
+  padding: 0.25rem 1rem;
   border-radius: 0.25rem;
   font-size: 0.9rem;
+  margin: 0.25rem 1rem;
 }
 
 .btn:hover {
