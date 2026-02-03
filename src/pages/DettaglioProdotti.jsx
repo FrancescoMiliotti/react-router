@@ -2,6 +2,8 @@ import axios from "axios";
 import { useState } from "react";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
+
 
 function DettaglioProdotti() {
 
@@ -30,8 +32,9 @@ function DettaglioProdotti() {
 
     return <div>
 
-        <h1>Qui trovate il dettaglio dei prodotti id {id}</h1>
+        <h1>Dettaglio Prodotto</h1>
         <h2>{dettagli.title}</h2>
+        <Link className="link" to="/Prodotti">Torna ai Prodotti</Link>
         
 
 
