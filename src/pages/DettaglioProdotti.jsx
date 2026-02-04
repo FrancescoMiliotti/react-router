@@ -27,7 +27,7 @@ function DettaglioProdotti() {
 
     }
 
-    useEffect(getData, []);
+    useEffect(getData, [id]);
 
 
     return <div>
@@ -41,6 +41,8 @@ function DettaglioProdotti() {
                 <p>{dettagli.description}</p>
             </div>
             <Link className="btn" to="/Prodotti">Torna ai Prodotti</Link>
+            <Link className="btn" to={`/DettaglioProdotti/${parseInt(id) + 1}`}>Prossimo Prodotto</Link>
+
         </div>
 
 
